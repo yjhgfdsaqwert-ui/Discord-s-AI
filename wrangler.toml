@@ -1,4 +1,4 @@
-name = "Discord's AI"
+name = "discord's ai"
 main = "worker.js"
 compatibility_date = "2026-09-11"
 

@@ -94,7 +94,7 @@ export default {
      * ==========================================================
      */
     return new Response(
-      "Coupang AI Discord Bot Server",
+      "Discord's AI",
       {
         status: 200
       }
@@ -424,13 +424,13 @@ export class DiscordBot {
      * Discord Bot Token
      */
     const token =
-      this.env.AI_coupang_discord;
+      this.env.AI_discord;
 
 
     if (!token) {
 
       const error =
-        "AI_coupang_discord 환경변수가 없습니다.";
+        "AI_discord 환경변수가 없습니다.";
 
       this.status.lastError =
         error;
@@ -1093,13 +1093,13 @@ export class DiscordBot {
 
 
     const token =
-      this.env.AI_coupang_discord;
+      this.env.AI_discord;
 
 
     if (!token) {
 
       this.status.lastError =
-        "AI_coupang_discord 환경변수가 없습니다.";
+        "AI_discord 환경변수가 없습니다.";
 
       return;
 
@@ -1240,10 +1240,10 @@ export class DiscordBot {
 
 
     const devChannel =
-      this.env.AI_coupang_discord_dev_channel;
+      this.env.AI_discord_dev_channel;
 
     const userChannel =
-      this.env.AI_coupang_discord_user_channel;
+      this.env.AI_discord_user_channel;
 
 
     const channelId =
@@ -1375,13 +1375,13 @@ export class DiscordBot {
   ) {
 
     const apiKey =
-      this.env.AI_coupang_api;
+      this.env.AI_API;
 
 
     if (!apiKey) {
 
       throw new Error(
-        "AI_coupang_api 환경변수가 없습니다."
+        "AI_api 환경변수가 없습니다."
       );
 
     }
@@ -1412,7 +1412,7 @@ export class DiscordBot {
               "https://coupang-ai-server.yjh20130103.workers.dev",
 
             "X-Title":
-              "Coupang AI Discord Bot"
+              "AI Discord Bot"
 
           },
 
@@ -1577,13 +1577,13 @@ export class DiscordBot {
   ) {
 
     const token =
-      this.env.AI_coupang_discord;
+      this.env.AI_discord;
 
 
     if (!token) {
 
       throw new Error(
-        "AI_coupang_discord 환경변수가 없습니다."
+        "AI_discord 환경변수가 없습니다."
       );
 
     }
